@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SwarLekh – Smarter, simpler, inclusive examinations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <button class="logo" data-go="home" aria-label="SwarLekh home">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="12" fill="#1d4ed8"/><path d="M11 23c0-5 4-7 9-7s9 2 9 7M13 28h14M20 11v5" stroke="#fff" stroke-width="3" stroke-linecap="round" fill="none"/><circle cx="20" cy="9.5" r="2" fill="#fff"/></svg>
+      SwarLekh
+    </button>
+    <nav class="links" id="links" aria-label="Main">
+      <button class="l" data-go="home">Home</button>
+      <button class="l" data-go="product">Product</button>
+      <button class="l" data-go="tech">Technology</button>
+      <button class="l" data-go="about">About &amp; awards</button>
+      <button class="l" data-go="contact">Contact us</button>
+    </nav>
+    <div style="display:flex;gap:10px;align-items:center">
+      <button class="icon-btn" id="theme" aria-label="Switch light or dark theme" title="Switch theme">🌓</button>
+      <button class="btn cta-top" data-go="contact" data-tab="demo">Book a demo</button>
+      <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ================= HOME ================= -->
+<div class="page active" id="home">
+  <div class="hero">
+    <div class="wrap">
+      <div class="hero-in">
+        <span class="kicker">AI-powered examination platform</span>
+        <h1>Examinations that are <span class="hl">smarter</span>, simpler and open to every learner.</h1>
+        <p class="lead">SwarLekh helps colleges and universities handle the whole exam journey: question papers, exam delivery, answer management, evaluation and results. It also lets visually impaired students write exams independently, with no scribe needed.</p>
+        <div class="cta-row">
+          <button class="btn" data-go="contact" data-tab="demo">Book a demo</button>
+          <button class="btn ghost" data-go="product">See the features</button>
+        </div>
+      </div>
+      <div style="position:relative">
+        <div class="demo" aria-label="Animated example of a student answering by voice">
+          <div class="bar"><i></i><i></i><i></i></div>
+          <div class="q">Q3. Explain the water cycle.</div>
+          <div class="wave" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <p class="typed" id="typed" aria-live="off"></p>
+          <div class="chips"><span class="chip">🎙️ Voice input</span><span class="chip">🔊 Read aloud</span><span class="chip">🧑‍🦯 Screen-reader ready</span></div>
+        </div>
+        <div class="sticker s1"><span class="e">🏆</span>DYSO 2nd Runner Up</div>
+        <div class="sticker s2"><span class="e">🤖</span>AI + ML + LLaMA</div>
+        <div class="sticker s3"><span class="e">♿</span>Built for accessibility</div>
+      </div>
+    </div>
+  </div>
+
+  <section class="alt">
+    <div class="wrap">
+      <h2>One platform for the full exam lifecycle</h2>
+      <p class="muted">Exam work usually runs on paper, spreadsheets and many separate tools. SwarLekh brings every step into one flow.</p>
+      <div class="flow">
+        <div class="st"><span>📝</span><b>Create</b><small>Question papers</small></div>
+        <div class="st"><span>💻</span><b>Deliver</b><small>Online exams</small></div>
+        <div class="st"><span>🗂️</span><b>Manage</b><small>Answer sheets</small></div>
+        <div class="st"><span>✅</span><b>Evaluate</b><small>Faster marking</small></div>
+        <div class="st"><span>📊</span><b>Publish</b><small>Result processing</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Why institutions choose SwarLekh</h2>
+      <div class="grid g3" style="margin-top:28px">
+        <div class="card"><div class="em">⏱️</div><h3>Less repetitive work</h3><p>Teachers spend less time on paper setting, collating and marking, and more time on teaching.</p></div>
+        <div class="card"><div class="em">🧑‍🦯</div><h3>Independence for every student</h3><p>Screen-reader support, text-to-speech and voice answers help visually impaired students write without a scribe.</p></div>
+        <div class="card"><div class="em">🧠</div><h3>AI that assists, teachers decide</h3><p>Machine learning and language models suggest and speed things up. Faculty stay in control of every outcome.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="award">
+        <div class="medal" aria-hidden="true">🏅</div>
+        <div>
+          <h3>DYSO – 2nd Runner Up</h3>
+          <p>SwarLekh was recognised as 2nd Runner Up at DYSO, a milestone for our mission to make exams more inclusive.</p>
+          <a class="btn" href="https://drive.google.com/file/d/1tN_6NLoeH6Nz960jBJFyJ67uTJxYvqBl/view?usp=sharing" target="_blank" rel="noopener">View certificate</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap" style="text-align:center">
+      <h2>Want to see it in action?</h2>
+      <p class="muted" style="margin-inline:auto">Book a short demo and we will walk you through SwarLekh with your own exam process in mind.</p>
+      <button class="btn" data-go="contact" data-tab="demo">Book a demo</button>
+    </div>
+  </section>
+</div>
+
+<!-- ================= PRODUCT ================= -->
+<div class="page" id="product">
+  <div class="wrap page-head">
+    <span class="kicker">Product</span>
+    <h1>What SwarLekh does</h1>
+    <p>Every feature is built around one goal: remove the friction from examinations for institutions, teachers and students.</p>
+  </div>
+  <section style="padding-top:30px">
+    <div class="wrap">
+      <div class="grid g3">
+        <div class="card"><div class="em">📝</div><h3>Question paper creation</h3><p>Build papers from a question bank with marks, difficulty and topic balance. AI can suggest questions for a syllabus unit.</p></div>
+        <div class="card"><div class="em">💻</div><h3>Online exam delivery</h3><p>Students take exams on a clean, simple screen with timers, autosave and clear instructions.</p></div>
+        <div class="card"><div class="em">🗂️</div><h3>Answer management</h3><p>Answers are stored safely and organised by exam, batch and student, ready for evaluation.</p></div>
+        <div class="card"><div class="em">✅</div><h3>Evaluation support</h3><p>Rubrics and AI suggestions help teachers mark faster and more consistently.</p></div>
+        <div class="card"><div class="em">📊</div><h3>Result processing</h3><p>Marks are collected, checked and turned into results and reports with less manual effort.</p></div>
+        <div class="card"><div class="em">🔐</div><h3>Secure and reliable</h3><p>Role-based access for admins, faculty and students, with activity logs for accountability.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="grid g2" style="align-items:center;gap:40px">
+        <div>
+          <span class="kicker">Accessibility first</span>
+          <h2>No scribe needed</h2>
+          <p class="muted">Visually impaired students often struggle to find a scribe for each exam. SwarLekh gives them a way to take the exam on their own terms.</p>
+          <p><b>Screen-reader compatible</b> pages, <b>text-to-speech</b> for questions and <b>voice-based answer input</b> let students listen, speak and submit independently.</p>
+        </div>
+        <div class="grid g2">
+          <div class="card"><div class="em">🔊</div><h3>Text to speech</h3><p>Questions read aloud clearly.</p></div>
+          <div class="card"><div class="em">🎙️</div><h3>Voice answers</h3><p>Speak the answer, review it, submit.</p></div>
+          <div class="card"><div class="em">⌨️</div><h3>Keyboard friendly</h3><p>Everything works without a mouse.</p></div>
+          <div class="card"><div class="em">🧑‍🦯</div><h3>Screen readers</h3><p>Built with accessible markup.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Our journey: past, present and future</h2>
+      <p class="muted">Updates are added here as SwarLekh grows.</p>
+      <div class="cols3" style="margin-top:20px">
+        <div>
+          <h3>📖 Past</h3>
+          <div class="tl">
+            <div class="it"><span class="tag past">Done</span><h4>Problem research</h4><p>Spoke with faculty and students about exam setting, evaluation and scribe challenges.</p></div>
+            <div class="it"><span class="tag past">Done</span><h4>First prototype</h4><p>Built the first version of paper creation and exam flow.</p></div>
+            <div class="it"><span class="tag past">Done</span><h4>DYSO recognition</h4><p>Won 2nd Runner Up at DYSO.</p></div>
+          </div>
+        </div>
+        <div>
+          <h3>🚀 Present</h3>
+          <div class="tl">
+            <div class="it now"><span class="tag now">Live now</span><h4>AI question paper support</h4><p>Language models help draft and organise questions.</p></div>
+            <div class="it now"><span class="tag now">Live now</span><h4>Accessible exam experience</h4><p>Screen-reader support, text-to-speech and voice input.</p></div>
+            <div class="it now"><span class="tag now">Live now</span><h4>Answer management</h4><p>Safe storage and organisation of student answers.</p></div>
+          </div>
+        </div>
+        <div>
+          <h3>🔭 Future</h3>
+          <div class="tl">
+            <div class="it"><span class="tag next">Coming soon</span><h4>AI-assisted evaluation</h4><p>Smarter marking suggestions with teacher approval.</p></div>
+            <div class="it"><span class="tag next">Coming soon</span><h4>Regional language voice</h4><p>Voice input and read-aloud in Marathi, Hindi and more.</p></div>
+            <div class="it"><span class="tag next">Coming soon</span><h4>Analytics and mobile app</h4><p>Performance insights and exams on phones.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= TECH ================= -->
+<div class="page" id="tech">
+  <div class="wrap page-head">
+    <span class="kicker">Technology</span>
+    <h1>The AI and architecture behind SwarLekh</h1>
+    <p>We use modern AI and machine learning to save time for teachers and open exams up to more students.</p>
+  </div>
+  <section style="padding-top:30px">
+    <div class="wrap">
+      <div class="grid g4">
+        <div class="card"><div class="em">🦙</div><h3>LLaMA language models</h3><p>Drafts questions, summarises answers and powers smart suggestions.</p></div>
+        <div class="card"><div class="em">🤖</div><h3>Machine learning</h3><p>Learns from patterns to support evaluation and result checks.</p></div>
+        <div class="card"><div class="em">🗣️</div><h3>Speech technology</h3><p>Speech-to-text and text-to-speech for voice-based exams.</p></div>
+        <div class="card"><div class="em">🔎</div><h3>NLP</h3><p>Understands written answers to compare them with model answers.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <h2>System architecture</h2>
+      <p class="muted">A simple view of how the pieces fit together. Scroll sideways on small screens.</p>
+      <div class="arch" role="img" aria-label="Architecture diagram with users, accessibility layer, application services, AI layer and data layer">
+        <div class="layer"><div class="lb">Users</div><div class="bx"><b>Admin</b>Exam cell</div><div class="bx"><b>Faculty</b>Set and evaluate</div><div class="bx"><b>Students</b>Write exams</div><div class="bx"><b>Visually impaired students</b>Voice and audio</div></div>
+        <div class="dn">⬇</div>
+        <div class="layer"><div class="lb">Interface</div><div class="bx"><b>Web app</b>Responsive UI</div><div class="bx"><b>Accessibility layer</b>Screen reader · TTS · voice input</div></div>
+        <div class="dn">⬇</div>
+        <div class="layer"><div class="lb">Services</div><div class="bx"><b>Paper builder</b></div><div class="bx"><b>Exam delivery</b></div><div class="bx"><b>Answer manager</b></div><div class="bx"><b>Evaluation</b></div><div class="bx"><b>Results</b></div></div>
+        <div class="dn">⬇</div>
+        <div class="layer"><div class="lb">AI layer</div><div class="bx ai"><b>LLaMA</b><small>Questions and suggestions</small></div><div class="bx ai"><b>ML models</b><small>Evaluation support</small></div><div class="bx ai"><b>Speech engine</b><small>STT and TTS</small></div><div class="bx ai"><b>NLP</b><small>Answer understanding</small></div></div>
+        <div class="dn">⬇</div>
+        <div class="layer" style="margin-bottom:0"><div class="lb">Data</div><div class="bx"><b>Question bank</b></div><div class="bx"><b>Answers and audio</b></div><div class="bx"><b>Results and reports</b></div><div class="bx"><b>Access control and logs</b></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Principles we build by</h2>
+      <div class="grid g3" style="margin-top:24px">
+        <div class="card"><div class="em">👩‍🏫</div><h3>Human in the loop</h3><p>AI suggests, faculty approve. Marks and results are never decided by AI alone.</p></div>
+        <div class="card"><div class="em">🤝</div><h3>Inclusive by design</h3><p>Accessibility is part of the core platform, not an add-on.</p></div>
+        <div class="card"><div class="em">🛡️</div><h3>Private and secure</h3><p>Student data is protected with role-based access and logs.</p></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<div class="page" id="about">
+  <div class="wrap page-head">
+    <span class="kicker">About us</span>
+    <h1>Meet the founder</h1>
+  </div>
+  <section style="padding-top:30px">
+    <div class="wrap founder">
+      <div style="position:relative;display:flex;justify-content:center">
+        <!-- Put the founder photo at images/founder.jpg. If it is missing, the initials show instead. -->
+        <div class="photo" id="founderPhoto">PP
+          <img src="images/founder.jpg" alt="Portrait of Prajakta Prabhakar Pare" onerror="this.remove()">
+          <div class="sticker s1" style="top:-14px;right:-14px">👩‍💻 Founder</div>
+          <div class="sticker s3" style="bottom:-16px;left:-14px;right:auto">💙 Inclusive edtech</div>
+        </div>
+      </div>
+      <div>
+        <h2>Prajakta Prabhakar Pare</h2>
+        <p style="color:var(--blue);font-weight:700;font-size:1.1rem">Founder &amp; Team Lead, SwarLekh</p>
+        <p><b>Building a smarter and more inclusive future for education.</b></p>
+        <p>I am the founder and team lead of SwarLekh, an initiative focused on transforming the way educational institutions manage examinations. My vision is to simplify the examination lifecycle through technology, reduce repetitive administrative work for educators, and create more accessible assessment experiences for students.</p>
+        <p>Through SwarLekh, I aim to address the challenges faced by colleges and universities in question paper creation, examination delivery, answer management, evaluation, and result processing.</p>
+        <p>A key part of this vision is supporting visually impaired students who often face difficulties finding scribes during examinations. By exploring accessible technologies such as screen-reader compatibility, text-to-speech, and voice-based answer input, SwarLekh aims to help students participate more independently.</p>
+        <p>I believe technology should not only make processes faster but also create equal opportunities. Through continuous learning, collaboration, and innovation, I aspire to make SwarLekh a reliable assessment platform for educational institutions across India.</p>
+        <div class="quote">My mission: To make examinations smarter, simpler, and more inclusive for every learner.</div>
+        <a class="btn" href="mailto:swarlekh2@gmail.com">Email me</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <h2>Our team</h2>
+      <p class="muted">The people building SwarLekh. More members will be added here.</p>
+      <div class="grid g3" style="margin-top:24px">
+        <div class="card" style="text-align:center"><div class="em" style="margin-inline:auto;font:800 1.3rem var(--display);color:var(--blue)">PP</div><h3>Prajakta Prabhakar Pare</h3><p>Founder &amp; Team Lead</p></div>
+        <div class="card" style="text-align:center;border-style:dashed"><div class="em" style="margin-inline:auto">➕</div><h3>Team member</h3><p>Name and role coming soon</p></div>
+        <div class="card" style="text-align:center;border-style:dashed"><div class="em" style="margin-inline:auto">➕</div><h3>Team member</h3><p>Name and role coming soon</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Awards and recognition</h2>
+      <div class="award" style="margin-top:24px">
+        <div class="medal" aria-hidden="true">🏆</div>
+        <div>
+          <h3>DYSO – 2nd Runner Up</h3>
+          <p>Recognised for building an accessible, AI-powered examination platform for educational institutions.</p>
+          <a class="btn" href="https://drive.google.com/file/d/1tN_6NLoeH6Nz960jBJFyJ67uTJxYvqBl/view?usp=sharing" target="_blank" rel="noopener">View award certificate</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= CONTACT ================= -->
+<div class="page" id="contact">
+  <div class="wrap page-head">
+    <span class="kicker">Contact us</span>
+    <h1>Let's talk about your exams</h1>
+    <p>Send us a message or book a demo. We reply as soon as we can.</p>
+  </div>
+  <section style="padding-top:20px">
+    <div class="wrap">
+      <div class="tabs" role="tablist">
+        <button role="tab" id="tab-contact" aria-selected="true" data-tab="contact">Contact us</button>
+        <button role="tab" id="tab-demo" aria-selected="false" data-tab="demo">Book a demo</button>
+      </div>
+      <div class="contact-grid">
+        <div class="info">
+          <a href="mailto:swarlekh2@gmail.com"><span class="em">✉️</span><span>swarlekh2@gmail.com<small>Email us anytime</small></span></a>
+          <a href="tel:+919112145470"><span class="em">📞</span><span>+91 91121 45470<small>Call or WhatsApp</small></span></a>
+          <a href="https://drive.google.com/file/d/1tN_6NLoeH6Nz960jBJFyJ67uTJxYvqBl/view?usp=sharing" target="_blank" rel="noopener"><span class="em">🏅</span><span>DYSO award certificate<small>Opens in a new tab</small></span></a>
+        </div>
+
+        <form id="form-contact" novalidate>
+          <h3>Send a message</h3>
+          <div class="row2"><div><label for="c-name">Your name</label><input id="c-name" required autocomplete="name"></div>
+          <div><label for="c-email">Email</label><input id="c-email" type="email" required autocomplete="email"></div></div>
+          <label for="c-sub">Subject</label><input id="c-sub">
+          <label for="c-msg">Message</label><textarea id="c-msg" required></textarea>
+          <button class="btn" type="submit">Send message</button>
+        </form>
+
+        <form id="form-demo" novalidate hidden>
+          <h3>Book a demo</h3>
+          <div class="row2"><div><label for="d-name">Your name</label><input id="d-name" required autocomplete="name"></div>
+          <div><label for="d-email">Email</label><input id="d-email" type="email" required autocomplete="email"></div></div>
+          <div class="row2"><div><label for="d-phone">Phone</label><input id="d-phone" type="tel" autocomplete="tel"></div>
+          <div><label for="d-inst">College or university</label><input id="d-inst" required></div></div>
+          <div class="row2"><div><label for="d-date">Preferred date</label><input id="d-date" type="date"></div>
+          <div><label for="d-role">Your role</label><select id="d-role"><option>Exam cell / Controller</option><option>Faculty</option><option>Principal / Director</option><option>Other</option></select></div></div>
+          <label for="d-note">What would you like to see?</label><textarea id="d-note"></textarea>
+          <button class="btn" type="submit">Book my demo</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><b style="font-family:var(--display);font-size:1.2rem">SwarLekh</b><br><small>Smarter, simpler, inclusive examinations.</small></div>
+    <div><small>✉️ swarlekh2@gmail.com &nbsp; 📞 +91 91121 45470</small><br><small>© <span id="yr"></span> SwarLekh. All rights reserved.</small></div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

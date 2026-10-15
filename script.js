@@ -42,7 +42,8 @@
 
   var ENDPOINT='https://formsubmit.co/ajax/swarlekh2@gmail.com';
   function mailFallback(subject,body){
-    window.location.href='mailto:swarlekh2@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+    var url='https://mail.google.com/mail/?view=cm&fs=1&to=swarlekh2@gmail.com&su='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+    if(!window.open(url,'_blank')){window.location.href=url}
   }
   function valid(form){
     var ok=true;form.querySelectorAll('[required]').forEach(function(i){if(!i.value.trim()){ok=false}});
@@ -77,14 +78,33 @@
     send(this,'Demo request – '+v('d-inst'),{Name:v('d-name'),Email:v('d-email'),Phone:v('d-phone'),Institution:v('d-inst'),Role:v('d-role'),'Preferred date':v('d-date'),Notes:v('d-note')},'Demo request sent! We will contact you soon.');
   });
 
-  // hero typing demo
-  var lines=['Water evaporates from oceans and lakes, rises as vapour, and cools to form clouds.','Then it falls as rain or snow and flows back into rivers and seas. This is the water cycle.'];
-  var el=document.getElementById('typed'),li=0,ci=0,reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if(reduce){el.textContent=lines[0]}
-  else(function tick(){
-    var s=lines[li];
-    if(ci<s.length){ci++;el.textContent=s.slice(0,ci);setTimeout(tick,32)}
-    else{setTimeout(function(){li=(li+1)%lines.length;ci=0;tick()},2200)}
+  // hero voice demo: listening -> transcribing -> saved
+  (function(){
+    var el=document.getElementById('typed'),wave=document.getElementById('wave'),
+        st=document.getElementById('status'),stText=document.getElementById('statusText');
+    if(!el)return;
+    var text='Water evaporates from oceans and lakes, rises as vapour and cools into clouds. It then falls as rain or snow and flows back to rivers and seas.';
+    function state(s,label,live){st.dataset.state=s;stText.textContent=label;wave.classList.toggle('live',live)}
+    var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(reduce){el.textContent=text;state('done','Answer saved',false);return}
+    var timer;
+    function run(){
+      el.textContent='';el.classList.remove('cur');
+      state('listen','Listening',true);
+      timer=setTimeout(function(){
+        state('write','Writing your answer',true);el.classList.add('cur');
+        var i=0;
+        (function type(){
+          if(i<text.length){i++;el.textContent=text.slice(0,i);timer=setTimeout(type,30)}
+          else{
+            el.classList.remove('cur');
+            state('done','Answer saved ✓',false);
+            timer=setTimeout(run,3200);
+          }
+        })();
+      },2000);
+    }
+    run();
   })();
 
   document.getElementById('yr').textContent=new Date().getFullYear();

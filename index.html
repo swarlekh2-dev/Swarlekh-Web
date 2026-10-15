@@ -46,17 +46,17 @@
           <button class="btn ghost" data-go="product">See the features</button>
         </div>
       </div>
-      <div style="position:relative">
-        <div class="demo" aria-label="Animated example of a student answering by voice">
-          <div class="bar"><i></i><i></i><i></i></div>
-          <div class="q">Q3. Explain the water cycle.</div>
-          <div class="wave" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
-          <p class="typed" id="typed" aria-live="off"></p>
-          <div class="chips"><span class="chip">🎙️ Voice input</span><span class="chip">🔊 Read aloud</span><span class="chip">🧑‍🦯 Screen-reader ready</span></div>
+      <div class="visual">
+        <div class="demo" aria-label="Animated example of a student answering an exam question by voice">
+          <div class="demo-top">
+            <div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
+            <span class="status" id="status" data-state="listen"><b class="sdot"></b><span id="statusText">Listening</span></span>
+          </div>
+          <div class="q"><small>Question 3 of 10</small>Explain the water cycle.</div>
+          <div class="wave live" id="wave" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="answer"><p class="typed" id="typed"></p></div>
+          <div class="demo-foot"><span class="chip">🎙️ Voice input</span><span class="chip">🔊 Read aloud</span><span class="chip">🧑‍🦯 Screen reader</span></div>
         </div>
-        <div class="sticker s1"><span class="e">🏆</span>DYSO 2nd Runner Up</div>
-        <div class="sticker s2"><span class="e">🤖</span>AI + ML + LLaMA</div>
-        <div class="sticker s3"><span class="e">♿</span>Built for accessibility</div>
       </div>
     </div>
   </div>
@@ -81,7 +81,7 @@
       <div class="grid g3" style="margin-top:28px">
         <div class="card"><div class="em">⏱️</div><h3>Less repetitive work</h3><p>Teachers spend less time on paper setting, collating and marking, and more time on teaching.</p></div>
         <div class="card"><div class="em">🧑‍🦯</div><h3>Independence for every student</h3><p>Screen-reader support, text-to-speech and voice answers help visually impaired students write without a scribe.</p></div>
-        <div class="card"><div class="em">🧠</div><h3>AI that assists, teachers decide</h3><p>Machine learning and language models suggest and speed things up. Faculty stay in control of every outcome.</p></div>
+        <div class="card"><div class="em">🧠</div><h3>AI that assists, teachers decide</h3><p>Machine learning and Lemma AI agents suggest and speed things up. Faculty stay in control of every outcome.</p></div>
       </div>
     </div>
   </section>
@@ -163,7 +163,7 @@
         <div>
           <h3>🚀 Present</h3>
           <div class="tl">
-            <div class="it now"><span class="tag now">Live now</span><h4>AI question paper support</h4><p>Language models help draft and organise questions.</p></div>
+            <div class="it now"><span class="tag now">Live now</span><h4>AI question paper support</h4><p>Lemma AI agents help draft and organise questions.</p></div>
             <div class="it now"><span class="tag now">Live now</span><h4>Accessible exam experience</h4><p>Screen-reader support, text-to-speech and voice input.</p></div>
             <div class="it now"><span class="tag now">Live now</span><h4>Answer management</h4><p>Safe storage and organisation of student answers.</p></div>
           </div>
@@ -191,7 +191,7 @@
   <section style="padding-top:30px">
     <div class="wrap">
       <div class="grid g4">
-        <div class="card"><div class="em">🦙</div><h3>LLaMA language models</h3><p>Drafts questions, summarises answers and powers smart suggestions.</p></div>
+        <div class="card"><div class="em">🧩</div><h3>Lemma platform</h3><p>AI agents and workflows that automate exam tasks, with people reviewing the results.</p></div>
         <div class="card"><div class="em">🤖</div><h3>Machine learning</h3><p>Learns from patterns to support evaluation and result checks.</p></div>
         <div class="card"><div class="em">🗣️</div><h3>Speech technology</h3><p>Speech-to-text and text-to-speech for voice-based exams.</p></div>
         <div class="card"><div class="em">🔎</div><h3>NLP</h3><p>Understands written answers to compare them with model answers.</p></div>
@@ -210,7 +210,7 @@
         <div class="dn">⬇</div>
         <div class="layer"><div class="lb">Services</div><div class="bx"><b>Paper builder</b></div><div class="bx"><b>Exam delivery</b></div><div class="bx"><b>Answer manager</b></div><div class="bx"><b>Evaluation</b></div><div class="bx"><b>Results</b></div></div>
         <div class="dn">⬇</div>
-        <div class="layer"><div class="lb">AI layer</div><div class="bx ai"><b>LLaMA</b><small>Questions and suggestions</small></div><div class="bx ai"><b>ML models</b><small>Evaluation support</small></div><div class="bx ai"><b>Speech engine</b><small>STT and TTS</small></div><div class="bx ai"><b>NLP</b><small>Answer understanding</small></div></div>
+        <div class="layer"><div class="lb">AI layer</div><div class="bx ai"><b>Lemma</b><small>AI agents and workflows</small></div><div class="bx ai"><b>ML models</b><small>Evaluation support</small></div><div class="bx ai"><b>Speech engine</b><small>STT and TTS</small></div><div class="bx ai"><b>NLP</b><small>Answer understanding</small></div></div>
         <div class="dn">⬇</div>
         <div class="layer" style="margin-bottom:0"><div class="lb">Data</div><div class="bx"><b>Question bank</b></div><div class="bx"><b>Answers and audio</b></div><div class="bx"><b>Results and reports</b></div><div class="bx"><b>Access control and logs</b></div></div>
       </div>
@@ -237,13 +237,11 @@
   </div>
   <section style="padding-top:30px">
     <div class="wrap founder">
-      <div style="position:relative;display:flex;justify-content:center">
+      <div class="photo-wrap">
         <!-- Put the founder photo at images/founder.jpg. If it is missing, the initials show instead. -->
-        <div class="photo" id="founderPhoto">PP
-          <img src="images/founder.jpg" alt="Portrait of Prajakta Prabhakar Pare" onerror="this.remove()">
-          <div class="sticker s1" style="top:-14px;right:-14px">👩‍💻 Founder</div>
-          <div class="sticker s3" style="bottom:-16px;left:-14px;right:auto">💙 Inclusive edtech</div>
-        </div>
+        <div class="photo" id="founderPhoto"><span>PP</span><img src="images/founder.jpg" alt="Portrait of Prajakta Prabhakar Pare" onerror="this.remove()"></div>
+        <p class="photo-meta"><span>Founder</span><i aria-hidden="true">|</i><span>Team Lead</span><i aria-hidden="true">|</i><span>Inclusive edtech</span></p>
+        <a class="photo-mail" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=swarlekh2@gmail.com" target="_blank" rel="noopener">✉️ swarlekh2@gmail.com</a>
       </div>
       <div>
         <h2>Prajakta Prabhakar Pare</h2>
@@ -254,7 +252,7 @@
         <p>A key part of this vision is supporting visually impaired students who often face difficulties finding scribes during examinations. By exploring accessible technologies such as screen-reader compatibility, text-to-speech, and voice-based answer input, SwarLekh aims to help students participate more independently.</p>
         <p>I believe technology should not only make processes faster but also create equal opportunities. Through continuous learning, collaboration, and innovation, I aspire to make SwarLekh a reliable assessment platform for educational institutions across India.</p>
         <div class="quote">My mission: To make examinations smarter, simpler, and more inclusive for every learner.</div>
-        <a class="btn" href="mailto:swarlekh2@gmail.com">Email me</a>
+        <a class="btn" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=swarlekh2@gmail.com" target="_blank" rel="noopener">✉️ swarlekh2@gmail.com</a>
       </div>
     </div>
   </section>
@@ -264,7 +262,7 @@
       <h2>Our team</h2>
       <p class="muted">The people building SwarLekh. More members will be added here.</p>
       <div class="grid g3" style="margin-top:24px">
-        <div class="card" style="text-align:center"><div class="em" style="margin-inline:auto;font:800 1.3rem var(--display);color:var(--blue)">PP</div><h3>Prajakta Prabhakar Pare</h3><p>Founder &amp; Team Lead</p></div>
+        <div class="card" style="text-align:center"><div class="avatar"><span>PP</span><img src="images/founder.jpg" alt="" onerror="this.remove()"></div><h3>Prajakta Prabhakar Pare</h3><p>Founder &amp; Team Lead</p></div>
         <div class="card" style="text-align:center;border-style:dashed"><div class="em" style="margin-inline:auto">➕</div><h3>Team member</h3><p>Name and role coming soon</p></div>
         <div class="card" style="text-align:center;border-style:dashed"><div class="em" style="margin-inline:auto">➕</div><h3>Team member</h3><p>Name and role coming soon</p></div>
       </div>
@@ -301,7 +299,7 @@
       </div>
       <div class="contact-grid">
         <div class="info">
-          <a href="mailto:swarlekh2@gmail.com"><span class="em">✉️</span><span>swarlekh2@gmail.com<small>Email us anytime</small></span></a>
+          <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=swarlekh2@gmail.com" target="_blank" rel="noopener"><span class="em">✉️</span><span>swarlekh2@gmail.com<small>Email us anytime</small></span></a>
           <a href="tel:+919112145470"><span class="em">📞</span><span>+91 91121 45470<small>Call or WhatsApp</small></span></a>
           <a href="https://drive.google.com/file/d/1tN_6NLoeH6Nz960jBJFyJ67uTJxYvqBl/view?usp=sharing" target="_blank" rel="noopener"><span class="em">🏅</span><span>DYSO award certificate<small>Opens in a new tab</small></span></a>
         </div>
@@ -335,7 +333,7 @@
 <footer>
   <div class="wrap">
     <div><b style="font-family:var(--display);font-size:1.2rem">SwarLekh</b><br><small>Smarter, simpler, inclusive examinations.</small></div>
-    <div><small>✉️ swarlekh2@gmail.com &nbsp; 📞 +91 91121 45470</small><br><small>© <span id="yr"></span> SwarLekh. All rights reserved.</small></div>
+    <div><small>✉️ <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=swarlekh2@gmail.com" target="_blank" rel="noopener">swarlekh2@gmail.com</a> &nbsp; 📞 +91 91121 45470</small><br><small>© <span id="yr"></span> SwarLekh. All rights reserved.</small></div>
   </div>
 </footer>
 
